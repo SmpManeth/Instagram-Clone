@@ -11283,3 +11283,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.container {
+  width: 950px;
+}
