@@ -8,7 +8,11 @@
         </div>
         <div class="col-9 pt-5 ps-5">
             <div>
-                <h1>{{ $user->username }}</h1>
+                <div class="d-flex justify-content-between align-items-baseline">
+
+                    <h1>{{ $user->username }}</h1>
+                    <a href="#">Add New Post</a>
+                </div>
                 <div class="d-flex">
                     <div class="pe-5"><strong>233</strong> posts</div>
                     <div class="pe-5"><strong>1,360</strong> followers</div>
@@ -21,10 +25,10 @@
                     Digital creator
                 </div>
                 <div>
-                    {{ $user->profile->bio}}
+                    {{ $user->profile->bio ?? " "}}
                 </div>
                 <div class="fw-bold">
-                    <a class="text-decoration-none" href="https://{{ $user->profile->website}}">{{ $user->profile->website}}</a>
+                    <a class="text-decoration-none" href="https://{{ $user->profile->website ?? ' '}}">{{ $user->profile->website ?? " "}}</a>
                 </div>
             </div>
         </div>
