@@ -34,26 +34,12 @@
         </div>
     </div>
     <div class="row pt-5">
+        @foreach($user->posts as $post)
         <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/278799970_737122180622853_3265528278529767819_n.jpg?stp=dst-jpg_s206x206&_nc_cat=110&ccb=1-6&_nc_sid=da31f3&_nc_ohc=VKJsrHvV-6sAX_sQe5f&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT-gduFQ5XBAVexKrvGdl6NgW_OkqXaVPxvhHNSGpcV9pA&oe=62802EA9" alt="">
+            <img class="w-100 h-100" src="/storage/{{ $post->image }}" alt="">
         </div>
-        <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/278479793_734598264208578_7838242761727126818_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=730e14&_nc_ohc=VRewxaxlOwAAX_Q-t9f&tn=v_tenr3G61cAOBPQ&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT9XhnZttJqbxNxvJ_CLsYnleJHHYKRFYANcLsS646wfGg&oe=6280E2A6" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/277777274_728932854775119_4392849192618160595_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=WnpcCn0EhUUAX8KynnJ&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT9x4YdTl_PhH6hNnlRdCVISsS5LmkQNgmZR9tbtKnbhvQ&oe=627FA208" alt="">
-        </div>
+        @endforeach
     </div>
-    <div class="row pt-0">
-        <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/278799970_737122180622853_3265528278529767819_n.jpg?stp=dst-jpg_s206x206&_nc_cat=110&ccb=1-6&_nc_sid=da31f3&_nc_ohc=VKJsrHvV-6sAX_sQe5f&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT-gduFQ5XBAVexKrvGdl6NgW_OkqXaVPxvhHNSGpcV9pA&oe=62802EA9" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/278479793_734598264208578_7838242761727126818_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=730e14&_nc_ohc=VRewxaxlOwAAX_Q-t9f&tn=v_tenr3G61cAOBPQ&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT9XhnZttJqbxNxvJ_CLsYnleJHHYKRFYANcLsS646wfGg&oe=6280E2A6" alt="">
-        </div>
-        <div class="col-4">
-            <img class="w-100 h-75" src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/277777274_728932854775119_4392849192618160595_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=WnpcCn0EhUUAX8KynnJ&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT9x4YdTl_PhH6hNnlRdCVISsS5LmkQNgmZR9tbtKnbhvQ&oe=627FA208" alt="">
-        </div>
-    </div>
+
 </div>
 @endsection
