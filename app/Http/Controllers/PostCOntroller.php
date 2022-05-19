@@ -28,7 +28,7 @@ class PostCOntroller extends Controller
 
         $imagePath = request('image')->store('uploads','public');
 
-        $image =Image::make(public_path("storage/{$imagePath}"))->fit(1200,1200);
+        $image =Image::make(public_path("storage/{$imagePath}"))->fit(1200,1200);//fit image to the square
 
         $image->save();
         auth()->user()->posts()->create([
