@@ -17,7 +17,6 @@ class PostCOntroller extends Controller
     }
     public function create()
     {
-
         return view('posts/create');
     }
     public function store()
@@ -43,9 +42,6 @@ class PostCOntroller extends Controller
 
     public function show(\App\Models\Post $post)
     {
-       
-
-
         $user = User::findOrFail($post['user_id']);
 
         return view('posts/show', compact('post','user'));

@@ -25,7 +25,7 @@
                     <strong>{{ $user->name }}</strong>
                 </div>
                 <div class="text-muted">
-                    Digital creator
+                    {{ $user->profile->category ?? ' '}}
                 </div>
                 <div>
                     {{ $user->profile->bio ?? " "}}
